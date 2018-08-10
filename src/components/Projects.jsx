@@ -41,7 +41,7 @@ class Projects extends Component {
           </div>
         <div className='project-container'>
           <div data-aos-easing="ease-in-sine" data-aos="fade-up"  id='outer-box'>
-            <a href='https://have-you-tried.firebaseapp.com' >
+            <a href='https://have-you-tried-this.firebaseapp.com' >
               <img className='project-card' src={tried} alt='have-you-tried' />
               <div id='inner-box'>
                   <ul>
@@ -66,6 +66,7 @@ class Projects extends Component {
               <img className='project-card' src={queue} alt='queue' />
               <div id='inner-box'>
                 <ul>
+                  <h5>Queue Overflow</h5>
                   <li>React.js</li>
                   <li>JavaScript</li>
                   <li>Highlight.js</li>
@@ -88,6 +89,7 @@ class Projects extends Component {
               <img className='project-card' src={origins} alt='super origins' />
               <div id='inner-box'>
                   <ul>
+                  <h5>Super Origins</h5>
                   <li>JavaScript</li>
                   <li>Semantic UI</li>
                   <li>Fetch API</li>
@@ -106,6 +108,7 @@ class Projects extends Component {
               <img className='project-card' src={music} alt='music' />
               <div id='inner-box'>
                 <ul>
+                  <h5>Music Playland</h5>
                   <li>React.js</li>
                   <li>JavaScript</li>
                   <li>CSS</li>

@@ -196,6 +196,7 @@ a {
   color: white;
   list-style: none;
   text-align: center;
+  text-transform: none;
 }
 
 #inner-box ul {

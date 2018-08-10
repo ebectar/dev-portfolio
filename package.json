@@ -2,7 +2,7 @@
   "name": "ebectar.github.io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ebectar.github.io/ebectar.github.io/",
+  "homepage": "https://ebectar.github.io/dev-portfolio/",
   "dependencies": {
     "aos": "^2.3.3",
     "lodash": "^4.17.10",
