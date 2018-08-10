@@ -22,9 +22,8 @@ class Contact extends React.Component {
                     <p>linkedin.com/in/ebectar</p></a>
                 </div>
                 <div>
-                    <a href='https://drive.google.com/file/d/1fRgjp7wNZHtJqEHgrqkFjZ4nyUwiaMfU/view?usp=sharing'><i className="far fa-file-pdf"></i>
+                    <a href='https://drive.google.com/file/d/1N1azDqG6SBB4tlm8AdBlaXKxKmSutVph/view?usp=sharing'><i className="far fa-file-pdf"></i>
                     <p>Resume</p></a>
-                <small><p>Alyssa Ebert &copy; 2018</p></small>
                 </div>
             </div>
            
