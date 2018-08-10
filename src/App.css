@@ -1,0 +1,415 @@
+:root {
+  --sun-yellow: rgb(238, 177, 79);
+  --dark-blue: rgb(28, 75, 124);
+  --light-yellow: rgb(255, 254, 216);
+  --background-gradient: linear-gradient(to bottom, rgb(255, 188, 81) 10%, rgb(253, 227, 144) 100%);
+  --blue-gradient: linear-gradient(to bottom, rgb(28, 75, 124) 10%, rgb(58,115,172) 100%);
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--sun-yellow);
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 1px 1px 0.5px rgba(0, 0, 0, 0.15);
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ace {
+  font-size: 10vh;
+  letter-spacing: .2em;
+  word-spacing: .15em;
+  margin-top: 0;
+  color: var(--light-yellow);
+  text-shadow: 2px 5px 5px rgba(0, 0, 0, .15);
+}
+
+.full-stack {
+  color: var(--light-yellow);
+  font-weight: 300;
+  letter-spacing: .1em;
+  font-family: sans-serif;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, .15);
+}
+
+.header-navigation {
+  background-color: #333; /* Black background color */
+  position: fixed; /* Make it stick/fixed */
+  top: -50px; /* Hide the navbar 50 px outside of the top view */
+  width: 100%; /* Full width */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
+
+a {
+  color: var(--light-yellow);
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, .15);
+  text-transform: uppercase;
+}
+
+.arrow {
+  opacity: 0.8;
+  
+  height: 3vh;
+  margin-bottom: -25vh;
+}
+
+.bio {
+  margin-top: 100vh;
+  width: 80vw;
+  margin-left: 10vw;
+  height: 60vh;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bio h2 {
+  margin: 0;
+  font-size: 4vh;
+  padding-bottom: 1em;
+}
+
+.bio p {
+  color: var(--dark-blue);
+  font-family: 'Sanchez', sans-serif;
+  margin-left: 1em;
+  margin-right: 1em;
+  text-align:left;
+  font-size: 1.2em;
+}
+
+.skills {
+  width: 100vw;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 3vh;
+  background-image: var(--background-gradient);
+  justify-content: center;
+  justify-content: space-around;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  box-shadow: 3px 3px 12px 3px #88888859;
+}
+
+.skills h2 {
+  color: var(--dark-blue);
+  font-size: 4vh;
+  text-shadow: 1px 1px 0.5px rgba(253, 226, 142, 0.8);
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2vh;
+}
+
+.skill {
+  height: 5vh;
+  margin: 0.5em;
+}
+
+.projects-wrapper {
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+.projects-wrapper h2 {
+  font-size: 4vh;
+}
+
+.projects-list {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 1.5vh;
+}
+
+.project-card {
+  height: 30vh;
+  margin: 3vh;
+  border: grey solid thin;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-container h2 {
+  font-size: 4vh;
+  color: var(--light-yellow);
+}
+
+.contact-container a {
+  color: var(--dark-blue);
+  text-transform: none;
+  text-decoration: none;
+}
+
+#outer-box {
+  display: block;
+  position: relative;
+  margin: 3vh;
+  margin-bottom: 0vh;
+}
+
+#inner-box {
+  background-color: var(--dark-blue);
+  background-size: 100% 100%;
+  border: grey solid thin;
+  margin: 3vh;
+  height: 30vh;
+  width: 88.5%;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  position: absolute;
+  padding: 0;
+  transition: opacity .5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+
+#inner-box li {
+  color: white;
+  list-style: none;
+  text-align: center;
+}
+
+#inner-box ul {
+  padding: 0;
+}
+
+.link {
+  height: 30vh;
+  width: 100%
+}
+
+#outer-box:hover #inner-box {
+  opacity: .9;
+  transition: opacity .5s;
+}
+
+.github {
+  height: 2vh !important;
+  width: 2vh !important;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: var(--blue-gradient);
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  box-shadow: -3px -3px 12px 3px #88888859;
+}
+
+.contact p {
+  color: white;
+}
+
+.contact-container {
+  display: flex;
+  align-items: center;
+}
+
+.contact-specs p {
+  color: white;
+}
+
+.contact-specs div {
+  display: flex;
+  align-items: center;
+}
+
+.contact-specs div a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.contact-specs div p {
+  margin: 0.5em;
+}
+
+.createdBy {
+  width: 90vw;
+}
+
+.createdBy>p {
+  padding: 1vw;
+  margin-top: 0
+}
+
+.mobileBonus {
+  display: none
+}
+
+.fas {
+  color: white;
+  padding: 5px;
+}
+
+.fab {
+  color: white;
+  padding: 5px;
+}
+
+.far {
+  color: white;
+  padding: 5px;
+}
+
+.logo {
+  height: 10vw;
+  padding: 3vw;
+  ;
+}
+
+body {
+  display: block;
+}
+
+.App {
+  position: absolute;
+  z-index: -5;
+  height: 100vh;
+}
+
+html {
+  position: absolute;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .header__video {
+    overflow-y: hidden;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .header__video {
+    overflow-y: hidden;
+    width: auto;
+  }
+}
+
+.App-header {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-x: hidden;
+  z-index: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  box-shadow: 3px 3px 12px 3px #88888859;
+}
+
+.header__video {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  min-width: 100%;
+  max-height: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+  video {
+    display: none;
+  }
+  header {
+    font-size: 1vw;
+    width: 100vw;
+    color: rgb(255, 255, 255);
+    background-image: url('water-still.jpg');
+    background-attachment: fixed;
+    background-size: auto 100vh;
+  }
+  .name {
+    width: 80vw;
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3vw;
+    height: 30vh;
+  }
+  .bio {
+    margin-top: 100vh;
+    height: 72vh;
+    font-size: 3vw;
+    width: 75vw;
+    margin-left: 15vw;
+  }
+
+  .bio p {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .personalPic {
+    background-size: auto 60vh;
+    background-attachment: fixed;
+    background-position: center top;
+    height: 40vh;
+  }
+  .github {
+    height: 4vh;
+  }
+  .createdBy>p {
+    padding: 3vw;
+    margin: 0;
+  }
+  .mobileBonus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: thin grey solid
+  }
+  .mobileBonus>img {
+    width: 90vw;
+    margin-bottom: 1vh;
+  }
+  .mobileBonus>p {
+    text-align: center
+  }
+}
