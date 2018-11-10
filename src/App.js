@@ -15,11 +15,6 @@ class App extends React.Component {
     }
   }
 
-  // bonus = (event) => {
-  //   console.log('bonus')
-  //   this.setState({render: !this.state.render})
-  // }
-
   render() {
     return (
       <div className="App">

@@ -29,7 +29,6 @@ class Contact extends React.Component {
            
             </div>
         </div>
-        {/* <div className='mobileBonus'><p>You're on mobile, so you get a picture of my dog! Congrats</p><img alt='quinn!' src={dog} /></div> */}
         </div>
     );
   }
